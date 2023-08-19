@@ -1,6 +1,7 @@
 .header {
   background-image: url(../images/header-background.jpg);
   height: 950px;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   background-repeat: no-repeat;
@@ -31,6 +32,26 @@
   line-height: 140%;
 }
 
+.header__navigation-button {
+  height: 70px;
+  width: 383px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 140%;
+  color: #f0f0f0;
+  background-color: #251D22;
+  border: none;
+  cursor: pointer;
+}
+
+.header__navigation-button:hover {
+  background-color: #766D73;
+}
+
+.header__navigation-button:active {
+  background-color: #D1CCD0;
+}
+
 .header__flacon {
   height: 500px;
   width: 458px;
@@ -43,4 +64,13 @@
   height: 458px;
   width: 294px;
   margin-bottom: -10px;
+}
+
+.onboarding {
+  padding: 110px 0 65px;
+}
+
+.onboarding__card {
+  width: 187px;
+  height: 680px;
 }
