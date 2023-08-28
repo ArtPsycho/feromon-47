@@ -1,4 +1,4 @@
-# feromon-47
+# Feromon-47
 https://github.com/ArtPsycho/feromon-47
 
 Реализация моего проекта по дизайну страницы мужской туалетной воды "Feromon 47"
