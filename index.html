@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feromon 47</title>
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/global.css">
@@ -15,7 +15,9 @@
         <h1 class="header__navigation-title">Feromon 47</h1>
         <p class="header__navigation-text">Новый взгляд на природу дикой воды<br>
           Мужской стиль, яркий аромат</p>
-        <button class="header__navigation-button">Узнать подробнее</button>
+        <div class="header__navigation-button">
+          <a class="header__navigation-button_text" href="#section__product">Узнать подробнее</a>
+        </div>
       </nav>
       <div class="header__flacon">
         <img
@@ -25,40 +27,230 @@
       </div>
     </header>
     <section class="onboarding">
-      <div class="onboarding__description">
-        <h2 class="onboarding__description-header">Ноты аромата</h2>
-        <p class="onboarding__description-text">
-          Начало аромата раскрывается бодрящими цитрусовыми нотами, 
-          сменяющимеся на свежий и тёплый кипарис, мягкий аромат белого кедра и сухой ветивер с отзвуками 
-          горького шоколада.
-        </p>
-        <p class="onboarding__description-text">
-          В базе Feromon 47 господствует сладкий, древесный и тёплый бензоин, придающий аромату натуральное звучание.
-        </p>
-      </div>
-      <div class="onboarding__cards">
+      <h2 class="onboarding__description-header">Ноты аромата</h2>
+      <p class="onboarding__description-text">
+        Начало аромата раскрывается бодрящими цитрусовыми нотами, 
+        сменяющимеся на свежий и тёплый кипарис, мягкий аромат белого кедра и сухой ветивер с отзвуками 
+        горького шоколада.
+      </p>
+      <p class="onboarding__description-text">
+        В базе Feromon 47 господствует сладкий, древесный и тёплый бензоин, придающий аромату<br> натуральное звучание.
+      </p>
+      <div class="onboarding__card-1">
         <img
-          class="onboarding__card"
+          class="onboarding__card-image"
           src="./images/onboarding-card_1.jpg"
           alt="Карточка 1"
         />
+      </div>
+      <div class="onboarding__card-2">
         <img
-          class="onboarding__card"
+          class="onboarding__card-image"
           src="./images/onboarding-card_2.jpg"
           alt="Карточка 2"
         />
+      </div>
+      <div class="onboarding__card-3">
         <img
-          class="onboarding__card"
+          class="onboarding__card-image"
           src="./images/onboarding-card_3.jpg"
           alt="Карточка 3"
         />
       </div>
     </section>
-    <section class="description"></section>
-    <section class="author"></section>
-    <section class="promo"></section>
-    <section class="style"></section>
-    <section class="cover"></section>
-    <section class="inspiration"></section>
-    <footer class="footer"></footer>
+    <section class="product" id="section__product">
+      <div class="product__card">
+        <img
+          class="product__card-image"
+          src="./images/product-card_1.jpg"
+          id="image"
+          alt="Изображение флакона"
+        />  
+      </div>
+      <div class="product__description">
+        <h2 class="product__title">Feromon 47</h2>
+        <p class="product__about" id="description">100 мл — для тех, кто уже знаком с ароматами
+           данного типа и предпочитает провести весь период холодного времени года бодрым и в тепле.</p>
+        <h3 class="product__description-header">Насыщенность</h3>
+        <p class="product__description-text">Яркий насыщенный аромат с долгоиграющим элегантным и теплым шлейфом</p>
+        <h3 class="product__description-header">Цвет</h3>
+        <p class="product__description-text">Весьма экспрессивный и в то же время успокаивающий цвет присущий энергичной 
+          природе воды</p>
+        <h3 class="product__description-header">Характер</h3>
+        <p class="product__description-text">Многогранный аромат с освежающим характером необузданного потока воды и согревающего 
+          домашнего очага</p>
+        <h3 class="product__description-header">Ноты аромата</h3>
+        <p class="product__description-text">Цитрус, кипарис, белый кедр, сухой ветивер, горький шоколад</p>
+      </div>
+      <div class="product__value-component">
+        <h3 class="product__value-header">Объем флакона</h3>
+        <div class="product__value">
+          <div class="product__value-button">
+            <input type="radio" id="value-60" name="product__value-input" onclick="change_text()">
+            <label class="product__value-item" for="value-60">60 ml</label>
+          </div>
+          <div class="product__value-button">
+            <input type="radio" id="value-100" name="product__value-input" onclick="return_text()" checked>
+            <label class="product__value-item" for="value-100">100 ml</label>
+          </div>
+        </div>
+      </div>
+      <div class="product__market">
+        <h3 class="product__market-header">Приобрести Feromon 47</h3>
+        <a class="product__market-link" href="#0">ИЛЬ ДЕ БОТЭ</a>
+        <a class="product__market-link" href="#0">Золотое Яблоко</a>
+      </div>
+    </section>
+    <section class="author">
+      <div class="author__card">
+        <img
+          class="author__card-image"
+          src="./images/author-image.jpg"
+          alt="Изображение автора аромата"
+        />
+      </div>
+      <h1 class="author__description-header">Маурицио Форильяс</h1>
+      <p class="author__description-text">Итальянский парфюмер Маурицио Форильяс известен 
+        своим нетрадиционным подходом к созданию новых ароматов. В основу своих работ<br> он
+         закладывает опыт своей юношеской повседневной жизни, стараясь задать им все<br>то же
+        стремление к идеальному и прекрасному.</p>
+      <p class="author__description-text">Вдохновение Маурицио находит много путешествуя и
+        отыскивая самые прекрасные и очаровывающие явления природы, стараясь запечатлеть их
+        в своих по истине уникальных ароматах.</p>
+    </section>
+    <section class="promo">
+      <div class="promo__card">
+        <h1 class="promo__header">Не пропусти!</h1>
+        <p class="promo__text">При предъявлении скриншота данного сайта — в подарок пробник лимитированных духов для дома</p>
+      </div>
+    </section>
+    <section class="style">
+      <h1 class="style__description-header">Согревающий стиль</h1>
+      <p class="style__description-text">Согревающая вуаль Feromon 47 наилучшим образом подчёркивает 
+        элегантность мужчины, предпочитающего деловой стиль в одежде, а древесная эссенция с тонким 
+        шлейфом идеально подходит для холодного времени года.</p>
+      <div class="style__card">
+        <img
+          class="style__card-image"
+          src="./images/style-image.jpg"
+          alt="Фото описывающее настроение стиля"
+        />
+      </div>
+    </section>
+    <section class="cover">
+      <div class="cover__card">
+        <h1 class="cover__header">Откройте для себя Feromon 47</h1>
+        <p class="cover__text">Новый, стильный и запоминающийся аромат для стойких и элегантных мужчин</p>
+      </div>
+    </section>
+    <section class="inspiration">
+      <h1 class="inspiration__header">Наше вдохновение</h1>
+      <div class="inspiration__lots">
+        <div class="inspiration__lots-card-1">
+          <img 
+            class="inspiration__lots-card-image"
+            src="./images/inspiration-card_1.jpg"
+            alt="Лимитированные коллекции"
+          />
+          <p class="inspiration__lots-card-text">Лимитированные коллекции</p>
+        </div>
+        <div class="inspiration__lots-card-2">
+          <img
+            class="inspiration__lots-card-image"
+            src="./images/inspiration-card_2.jpg"
+            alt="Ноты аромата"
+          />
+          <p class="inspiration__lots-card-text">Нотки бергамота в каждом аромате. Стойкость до 7 часов</p>  
+        </div>
+        <div class="inspiration__lots-card-3">
+          <img
+            class="inspiration__lots-card-image"
+            src="./images/inspiration-card_3.jpg"
+            alt="Ароматы"
+          />
+          <p class="inspiration__lots-card-text">Запоминающиеся, но не терпкие запахи</p>  
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__social">
+        <h2 class="footer__logo">Feromon 47</h2>
+        <ul class="footer__social-list">
+          <li class="footer__social-list-item">
+            <a class="footer__social-link" href="#0">
+              <img
+                class="footer__social-icon"
+                src="./images/icon-facebook.png"
+                alt="фэйсбук"
+              />
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-link" href="#0">
+               <img
+                 class="footer__social-icon"
+                 src="./images/icon-instagram.png"
+                 alt="инстаграм"
+               />  
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-link" href="#0">
+              <img
+                class="footer__social-icon"
+                src="./images/icon-twitter.png"
+                alt="твиттер"
+              />  
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-link" href="#0">
+              <img
+                class="footer__social-icon"
+                src="./images/icon-youtube.png"
+                alt="ютуб"
+              />  
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#0">Акции</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#0">Партнеры</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#0">О нас</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#0">Связаться с нами</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#0">Вопрос-ответ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__mail">
+        <h4 class="footer__mail-header">Новости, акции и рассылки</h4>
+        <div class="footer__input">
+          <input
+            type="text"
+            placeholder="Введите Email"
+            name="email"
+            class="footer__input-textfield"
+          />
+          <button type="submit" class="footer__input-submit">
+            <img
+              class="footer__submit-icon"
+              src="./images/icon-mail.svg"
+              alt="почта"
+            />  
+          </button>
+        </div>    
+      </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
   </body>
